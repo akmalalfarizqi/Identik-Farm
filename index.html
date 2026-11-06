@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Identik Farm – Qurban, Aqiqah, Edufarm, dan Pupuk Organik</title>
+  <meta name="description" content="Identik Farm: peternakan kambing dan sapi untuk qurban, aqiqah, edufarm sekolah, serta pupuk organik KOHE. Bahagia di kandang, berkah sepanjang jalan.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="font-sans text-leaf-900 bg-white antialiased">
+
+  <!-- Ikon WhatsApp (dipakai berulang) -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.6a11.9 11.9 0 0 0 5.7 1.5c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.200-3.400-8.500zM12 21.800c-1.800 0-3.500-.5-5-1.400l-.4-.2-3.700 1 1-3.600-.2-.4a9.900 9.900 0 0 1-1.500-5.300C2.200 6.500 6.600 2.100 12 2.100c2.600 0 5.100 1 6.900 2.900a9.800 9.800 0 0 1 2.900 6.900c0 5.400-4.400 9.900-9.800 9.900zm5.400-7.400c-.3-.1-1.800-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.100c-.2.200-.3.200-.6.100-1.700-.8-2.800-1.500-3.900-3.400-.3-.5.3-.5.900-1.600.1-.2.100-.4 0-.5l-.9-2.100c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2.100 3.200 5.100 4.500 1.900.8 2.600.9 3.500.7.600-.1 1.800-.7 2-1.400.3-.7.300-1.300.2-1.400-.1-.2-.3-.2-.6-.4z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="m7 12.500 3.500 3.500L17 9" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 inset-x-0 z-40 bg-white/95 backdrop-blur-sm border-b border-leaf-100">
+    <nav class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between" aria-label="Main">
+      <a href="#home" aria-label="Identik Farm – Home"><img src="images/logo.png" alt="Identik Farm" class="h-14 w-auto"></a>
+      <ul class="hidden lg:flex items-center gap-7 text-sm font-medium">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#edufarm" class="nav-link">Edufarm</a></li>
+        <li><a href="#fertilizer" class="nav-link">Fertilizer</a></li>
+        <li><a href="#pricelist" class="nav-link">Pricelist</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/6281999797925" target="_blank" rel="noopener"
+         class="hidden lg:inline-flex bg-leaf-600 hover:bg-leaf-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full">Order via WhatsApp</a>
+      <button id="menuBtn" class="lg:hidden p-2 rounded focus:outline-hidden focus-visible:ring-2 ring-leaf-500" aria-label="Open menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-leaf-100 px-4 py-3 text-sm font-medium">
+      <a href="#home" class="m-link block rounded-lg px-3 py-2">Home</a>
+      <a href="#about" class="m-link block rounded-lg px-3 py-2">About</a>
+      <a href="#edufarm" class="m-link block rounded-lg px-3 py-2">Edufarm</a>
+      <a href="#fertilizer" class="m-link block rounded-lg px-3 py-2">Fertilizer</a>
+      <a href="#pricelist" class="m-link block rounded-lg px-3 py-2">Pricelist</a>
+      <a href="#contact" class="m-link block rounded-lg px-3 py-2">Contact</a>
+      <a href="https://wa.me/6281999797925" target="_blank" rel="noopener" class="mt-2 block text-center bg-leaf-600 text-white font-semibold px-4 py-2.5 rounded-full">Order via WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero-bg pt-32 pb-16 md:pt-40 md:pb-24">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="bj-intro-bounce text-4xl md:text-5xl font-bold leading-tight" style="--d:.05s">Bahagia di kandang, berkah sepanjang jalan.</h1>
+          <p class="bj-intro-bounce mt-5 text-lg text-leaf-900/75 max-w-md" style="--d:.2s">Peternakan kambing dan sapi untuk qurban, aqiqah, edufarm sekolah, dan pupuk organik.</p>
+          <div class="bj-intro-bounce mt-8 flex flex-wrap gap-3" style="--d:.35s">
+            <a href="https://wa.me/6281999797925?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20Identik%20Farm." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-wa hover:brightness-95 text-white font-semibold px-6 py-3 rounded-full shadow-sm">
+              <svg class="w-5 h-5"><use href="#i-wa"/></svg> Chat WhatsApp
+            </a>
+            <a href="#pricelist" class="inline-flex items-center border-2 border-leaf-600 text-leaf-700 hover:bg-leaf-600 hover:text-white font-semibold px-6 py-3 rounded-full transition-colors">Lihat harga</a>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-md aspect-square">
+          <div class="bj-intro-bounce absolute inset-4 rounded-full bg-leaf-100" style="--d:.1s"></div>
+          <img src="images/sapi.png" alt="Sapi Identik Farm" class="bj-intro-bounce absolute left-[2%] bottom-[8%] h-[68%] w-auto drop-shadow-xl" style="--d:.45s">
+          <img src="images/kambing.png" alt="Kambing Identik Farm" class="bj-intro-bounce absolute right-[2%] bottom-[8%] h-[58%] w-auto drop-shadow-xl" style="--d:.65s">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="bj-reveal text-3xl font-bold max-w-xl">Peternakan kambing dan sapi untuk ibadah, edukasi, dan pertanian</h2>
+        <p class="bj-reveal mt-4 text-leaf-900/75 max-w-2xl">Identik Farm memelihara kambing dan sapi dengan pakan teratur dan kandang yang terawat. Hewan kami sediakan untuk qurban dan aqiqah, kandang kami terbuka untuk kegiatan belajar sekolah, dan kami juga menyediakan pupuk organik dari kotoran kambing, domba, dan sapi.</p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <article class="bj-reveal rounded-2xl bg-leaf-50 p-6">
+            <h3 class="font-semibold text-lg">Qurban</h3>
+            <p class="mt-2 text-sm text-leaf-900/70">Kambing dan sapi pilihan untuk Idul Adha, bisa dipilih langsung dan diantar ke lokasi Anda.</p>
+          </article>
+          <article class="bj-reveal rounded-2xl bg-leaf-50 p-6">
+            <h3 class="font-semibold text-lg">Aqiqah</h3>
+            <p class="mt-2 text-sm text-leaf-900/70">Kambing sehat untuk aqiqah putra dan putri, sesuai kebutuhan keluarga Anda.</p>
+          </article>
+          <article class="bj-reveal rounded-2xl bg-leaf-50 p-6">
+            <h3 class="font-semibold text-lg">Edufarm</h3>
+            <p class="mt-2 text-sm text-leaf-900/70">Kegiatan belajar dan bermain di peternakan untuk sekolah.</p>
+          </article>
+          <article class="bj-reveal rounded-2xl bg-leaf-50 p-6">
+            <h3 class="font-semibold text-lg">Pupuk organik</h3>
+            <p class="mt-2 text-sm text-leaf-900/70">Pupuk KOHE dari kotoran kambing, domba, dan sapi untuk tanaman Anda.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUFARM -->
+    <section id="edufarm" class="py-16 md:py-24 bg-leaf-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="bj-reveal text-3xl font-bold max-w-xl">Edufarm untuk sekolah</h2>
+        <p class="bj-reveal mt-4 text-leaf-900/75 max-w-2xl">Ajak siswa belajar langsung di peternakan. Mereka mengenal hewan ternak, bermain bersama teman, dan punya pengalaman di luar kelas.</p>
+        <div class="mt-10 grid sm:grid-cols-3 gap-5">
+          <article class="bj-reveal rounded-2xl bg-white p-6">
+            <div class="w-11 h-11 rounded-full bg-leaf-100 text-leaf-700 flex items-center justify-center">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 12 4l9 16H3z"/><path d="M12 20v-6l-3 6"/></svg>
+            </div>
+            <h3 class="mt-4 font-semibold text-lg">Camping</h3>
+            <p class="mt-1 text-sm text-leaf-900/70">Berkemah di area peternakan dan belajar hidup dekat alam.</p>
+          </article>
+          <article class="bj-reveal rounded-2xl bg-white p-6">
+            <div class="w-11 h-11 rounded-full bg-leaf-100 text-leaf-700 flex items-center justify-center">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="3"/><path d="M7 10v4M5 12h4M16 11h.01M18 13h.01"/></svg>
+            </div>
+            <h3 class="mt-4 font-semibold text-lg">Fun game</h3>
+            <p class="mt-1 text-sm text-leaf-900/70">Permainan kelompok yang seru dan melatih kerja sama siswa.</p>
+          </article>
+          <article class="bj-reveal rounded-2xl bg-white p-6">
+            <div class="w-11 h-11 rounded-full bg-leaf-100 text-leaf-700 flex items-center justify-center">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17c2 0 2-1.500 4-1.500S8 17 10 17s2-1.500 4-1.500S16 17 18 17s2-1.500 4-1.500M2 21c2 0 2-1.500 4-1.500S8 21 10 21s2-1.500 4-1.500S16 21 18 21s2-1.500 4-1.500"/><circle cx="15" cy="6" r="2"/><path d="m6 13 4-4 3 2 2-2"/></svg>
+            </div>
+            <h3 class="mt-4 font-semibold text-lg">Berenang</h3>
+            <p class="mt-1 text-sm text-leaf-900/70">Bermain air dan berenang bersama teman di sela kegiatan.</p>
+          </article>
+        </div>
+        <a href="https://wa.me/6281999797925?text=Assalamu%27alaikum%2C%20saya%20dari%20sekolah%20dan%20ingin%20bertanya%20tentang%20program%20Edufarm." target="_blank" rel="noopener"
+           class="bj-reveal mt-8 inline-flex bg-leaf-600 hover:bg-leaf-700 text-white font-semibold px-6 py-3 rounded-full">Tanya program edufarm</a>
+      </div>
+    </section>
+
+    <!-- FERTILIZER -->
+    <section id="fertilizer" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="bj-reveal text-3xl font-bold">Pupuk organik KOHE</h2>
+          <p class="bj-reveal mt-4 text-leaf-900/75 max-w-md">Pupuk organik dari kotoran hewan kambing, domba, dan sapi. Pakai KOHE, hasil lebih oke.</p>
+          <ul class="mt-6 space-y-3">
+            <li class="bj-reveal flex items-center gap-3 font-medium"><svg class="w-7 h-7 text-leaf-500 shrink-0"><use href="#i-check"/></svg>Menyuburkan tanah</li>
+            <li class="bj-reveal flex items-center gap-3 font-medium"><svg class="w-7 h-7 text-leaf-500 shrink-0"><use href="#i-check"/></svg>Meningkatkan hasil panen</li>
+            <li class="bj-reveal flex items-center gap-3 font-medium"><svg class="w-7 h-7 text-leaf-500 shrink-0"><use href="#i-check"/></svg>Ramah lingkungan</li>
+          </ul>
+          <div class="bj-reveal mt-8 inline-block rounded-2xl bg-leaf-50 px-6 py-4">
+            <p class="text-2xl font-bold text-leaf-600">Rp 10.000 <span class="text-base font-medium text-leaf-900/60">/ pax (10 kg)</span></p>
+            <p class="text-sm text-leaf-900/70">Pengiriman wilayah Jabodetabek</p>
+          </div>
+          <div class="bj-reveal mt-6">
+            <a href="https://wa.me/6281999797925?text=Assalamu%27alaikum%2C%20saya%20ingin%20pesan%20pupuk%20organik%20KOHE." target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-wa hover:brightness-95 text-white font-semibold px-6 py-3 rounded-full shadow-sm">
+              <svg class="w-5 h-5"><use href="#i-wa"/></svg> Order pupuk sekarang
+            </a>
+          </div>
+        </div>
+        <img src="images/pupuk-poster.jpg" alt="Poster pupuk organik KOHE dari Identik Farm" loading="lazy"
+             class="bj-reveal mx-auto w-full max-w-sm rounded-3xl shadow-lg">
+      </div>
+    </section>
+
+    <!-- PRICELIST -->
+    <section id="pricelist" class="py-16 md:py-24 bg-leaf-900 text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="bj-reveal text-3xl font-bold">Pricelist</h2>
+        <p class="bj-reveal mt-3 text-white/70 max-w-xl">Harga hewan dihitung per kilogram. Hubungi kami untuk cek stok dan bobot yang tersedia.</p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="bj-reveal rounded-3xl bg-white text-leaf-900 p-6 flex flex-col items-center text-center">
+            <div class="h-48 flex items-end"><img src="images/sapi.png" alt="Sapi" class="max-h-full w-auto"></div>
+            <h3 class="mt-4 text-xl font-semibold">Sapi</h3>
+            <p class="mt-2 text-3xl font-bold text-leaf-600">Rp 100.000<span class="text-base font-medium text-leaf-900/60"> / kg</span></p>
+            <a href="https://wa.me/6281999797925?text=Assalamu%27alaikum%2C%20saya%20ingin%20pesan%20sapi." target="_blank" rel="noopener" class="mt-5 w-full bg-leaf-600 hover:bg-leaf-700 text-white font-semibold px-5 py-2.5 rounded-full">Pesan sapi</a>
+          </article>
+          <article class="bj-reveal rounded-3xl bg-white text-leaf-900 p-6 flex flex-col items-center text-center">
+            <div class="h-48 flex items-end"><img src="images/kambing.png" alt="Kambing" class="max-h-[90%] w-auto"></div>
+            <h3 class="mt-4 text-xl font-semibold">Kambing</h3>
+            <p class="mt-2 text-3xl font-bold text-leaf-600">Rp 100.000<span class="text-base font-medium text-leaf-900/60"> / kg</span></p>
+            <a href="https://wa.me/6281999797925?text=Assalamu%27alaikum%2C%20saya%20ingin%20pesan%20kambing." target="_blank" rel="noopener" class="mt-5 w-full bg-leaf-600 hover:bg-leaf-700 text-white font-semibold px-5 py-2.5 rounded-full">Pesan kambing</a>
+          </article>
+          <article class="bj-reveal rounded-3xl bg-white text-leaf-900 p-6 flex flex-col items-center text-center sm:col-span-2 lg:col-span-1">
+            <div class="h-48 w-full"><img src="images/pupuk.jpg" alt="Pupuk organik" class="h-full w-full object-cover rounded-2xl"></div>
+            <h3 class="mt-4 text-xl font-semibold">Pupuk organik KOHE</h3>
+            <p class="mt-2 text-3xl font-bold text-leaf-600">Rp 10.000<span class="text-base font-medium text-leaf-900/60"> / pax (10 kg)</span></p>
+            <p class="text-xs text-leaf-900/60">Jabodetabek</p>
+            <a href="https://wa.me/6281999797925?text=Assalamu%27alaikum%2C%20saya%20ingin%20pesan%20pupuk%20organik%20KOHE." target="_blank" rel="noopener" class="mt-4 w-full bg-leaf-600 hover:bg-leaf-700 text-white font-semibold px-5 py-2.5 rounded-full">Pesan pupuk</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="bj-reveal text-3xl font-bold">Contact</h2>
+          <p class="bj-reveal mt-4 text-leaf-900/75 max-w-md">Tanya stok, pesan hewan atau pupuk, atau diskusi program edufarm. Isi form, pesan Anda langsung terkirim lewat WhatsApp.</p>
+          <div class="mt-8 space-y-4">
+            <a href="https://wa.me/6281999797925" target="_blank" rel="noopener" class="bj-reveal flex items-center gap-4 rounded-2xl border-2 border-leaf-100 hover:border-wa p-4">
+              <span class="w-12 h-12 rounded-full bg-wa text-white flex items-center justify-center shrink-0"><svg class="w-6 h-6"><use href="#i-wa"/></svg></span>
+              <span><span class="block text-sm text-leaf-900/60">WhatsApp</span><span class="block font-semibold">0819 9979 7925</span></span>
+            </a>
+            <a href="https://instagram.com/identikfarm" target="_blank" rel="noopener" class="bj-reveal flex items-center gap-4 rounded-2xl border-2 border-leaf-100 hover:border-pink-400 p-4">
+              <span class="w-12 h-12 rounded-full bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor"/></svg>
+              </span>
+              <span><span class="block text-sm text-leaf-900/60">Instagram</span><span class="block font-semibold">@identikfarm</span></span>
+            </a>
+          </div>
+        </div>
+
+        <form id="waForm" class="bj-reveal rounded-3xl bg-leaf-50 p-6 md:p-8 space-y-5" novalidate>
+          <div>
+            <label for="nama" class="block text-sm font-medium mb-1.5">Nama</label>
+            <input id="nama" name="nama" type="text" required autocomplete="name" placeholder="Nama Anda"
+                   class="w-full rounded-xl border border-leaf-100 bg-white px-4 py-3 focus:outline-hidden focus:ring-2 ring-leaf-500">
+          </div>
+          <div>
+            <label for="pesan" class="block text-sm font-medium mb-1.5">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" required placeholder="Contoh: Apakah kambingnya masih ada? atau Saya pesan 1 kg daging kambing."
+                      class="w-full rounded-xl border border-leaf-100 bg-white px-4 py-3 focus:outline-hidden focus:ring-2 ring-leaf-500"></textarea>
+          </div>
+          <p id="formError" class="hidden text-sm text-red-600" role="alert">Isi nama dan pesan dulu, ya.</p>
+          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-wa hover:brightness-95 text-white font-semibold px-6 py-3 rounded-full">
+            <svg class="w-5 h-5"><use href="#i-wa"/></svg> Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-leaf-900 text-white/80">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <div class="flex items-center gap-4">
+        <span class="bg-white rounded-xl px-3 py-2"><img src="images/logo.png" alt="Identik Farm" class="h-9 w-auto"></span>
+        <span>Bahagia di kandang, berkah sepanjang jalan</span>
+      </div>
+      <p>&copy; <span id="year"></span> Identik Farm</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/6281999797925" target="_blank" rel="noopener" aria-label="Chat WhatsApp"
+     class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-wa text-white shadow-lg flex items-center justify-center hover:brightness-95 focus:outline-hidden focus-visible:ring-4 ring-leaf-100">
+    <svg class="w-7 h-7"><use href="#i-wa"/></svg>
+  </a>
+
+  <script>
+    const WA_NUMBER = '6281999797925'; // nomor WhatsApp tujuan form
+
+    // Mobile menu
+    const btn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.add('hidden'); btn.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Active link (scroll spy)
+    const sections = ['home', 'about', 'edufarm', 'fertilizer', 'pricelist', 'contact'].map(id => document.getElementById(id));
+    const links = document.querySelectorAll('.nav-link, .m-link');
+    function setActive() {
+      let current = sections[0].id;
+      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 4;
+      if (atBottom) current = sections[sections.length - 1].id;
+      else sections.forEach(s => { if (s.getBoundingClientRect().top <= 120) current = s.id; });
+      links.forEach(a => {
+        const on = a.getAttribute('href') === '#' + current;
+        a.classList.toggle('active', on);
+        on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('scroll', setActive, { passive: true });
+    window.addEventListener('resize', setActive);
+    setActive();
+
+    // Intro bounce saat elemen masuk layar
+    const reveals = document.querySelectorAll('.bj-reveal');
+    const show = el => el.classList.add('bj-intro-bounce');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => entries.forEach(en => {
+        if (en.isIntersecting) { show(en.target); io.unobserve(en.target); }
+      }), { threshold: 0.15 });
+      reveals.forEach(el => {
+        el.style.setProperty('--d', (Array.from(el.parentElement.children).indexOf(el) % 4) * 0.09 + 's');
+        io.observe(el);
+      });
+    } else reveals.forEach(show);
+
+    // Form -> WhatsApp
+    const form = document.getElementById('waForm'), err = document.getElementById('formError');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const nama = form.nama.value.trim(), pesan = form.pesan.value.trim();
+      if (!nama || !pesan) { err.classList.remove('hidden'); return; }
+      err.classList.add('hidden');
+      const text = `Assalamu'alaikum, saya ${nama}.\n\n${pesan}`;
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

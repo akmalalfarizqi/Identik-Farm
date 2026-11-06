@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Tailwind v4: konfigurasi lewat CSS, tidak perlu tailwind.config.js */
+@source "../index.html";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-leaf-50: #f1f9ec;
+  --color-leaf-100: #dff0d3;
+  --color-leaf-500: #4f9a14;
+  --color-leaf-600: #3f8a12;
+  --color-leaf-700: #2f7a12;
+  --color-leaf-900: #173a0a;
+  --color-wa: #16c72e;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+.hero-bg { background: radial-gradient(circle at 85% 10%, #dff0d3 0, transparent 45%), #f7fbf3; }
+
+/* Active link */
+.nav-link { position: relative; padding: .25rem 0; transition: color .2s; }
+.nav-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 3px; border-radius: 2px; background: #3f8a12; transform: scaleX(0); transition: transform .25s; }
+.nav-link:hover { color: #4f9a14; }
+.nav-link.active { color: #3f8a12; font-weight: 600; }
+.nav-link.active::after { transform: scaleX(1); }
+.m-link.active { color: #3f8a12; font-weight: 600; background: #f1f9ec; }
+
+/* Intro bounce: elemen muncul dari bawah lalu memantul sebentar */
+.bj-intro-bounce {
+  animation: bj-intro-bounce .9s cubic-bezier(.22, 1, .36, 1) both;
+  animation-delay: var(--d, 0s);
+}
+@keyframes bj-intro-bounce {
+  0%   { opacity: 0; transform: translateY(48px) scale(.95); }
+  55%  { opacity: 1; transform: translateY(-12px) scale(1.01); }
+  75%  { transform: translateY(5px); }
+  90%  { transform: translateY(-2px); }
+  100% { opacity: 1; transform: none; }
+}
+/* Elemen .bj-reveal disembunyikan dulu (hanya jika JS aktif) sampai masuk layar */
+.js .bj-reveal:not(.bj-intro-bounce) { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bj-intro-bounce { animation: none; }
+  .js .bj-reveal:not(.bj-intro-bounce) { opacity: 1; }
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
